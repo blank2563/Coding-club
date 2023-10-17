@@ -4,7 +4,7 @@ This repository is for archival of code/documents used in the coding club at Rid
 
 ## Usage
 
-While all the files are viewable in browser, reccomended to clone this repo to your offline machine in order to do actual work on it.
+While all the files are viewable in browser, it is reccomended to clone this repo to your offline machine in order to do actual work on it.
 
 ## Contributing
 
