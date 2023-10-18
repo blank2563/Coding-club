@@ -8,4 +8,4 @@ While all the files are viewable in browser, it is reccomended to clone this rep
 
 ## Contributing
 
-Pull request are welcome for minor change/ revision or new files upload. For major changes to existing files, open an issue first to discuss the changes.
+Pull request are welcome for minor change/revision or new files upload. For major changes to existing files, open an issue first to discuss the changes.
