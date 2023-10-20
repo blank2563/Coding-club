@@ -23,7 +23,6 @@ def beginner():
             print("$70")
 
 
-
 def intermediate():
 
     nOffense = 0
