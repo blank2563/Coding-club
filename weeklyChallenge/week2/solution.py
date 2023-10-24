@@ -63,6 +63,3 @@ def advanced():
             print(round(nOffense**2 * math.sqrt(overLimit), 2))
     print("Your license has been suspended.")
 
-
-[beginner, intermediate, advanced][int(input("nMeth: "))]()
-
