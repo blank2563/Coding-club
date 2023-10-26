@@ -1,8 +1,8 @@
 """
 Over the Speed Limit by:
-1 to 10 11 to 20 21 and more
+1 to 10 | 11 to 20 | 21+
 Penalty Fines
-$20 $55 $70
+$20     | $55      | $70
 """
 
 

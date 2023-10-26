@@ -1,6 +1,6 @@
 import random
 
-###### 1st challenge ######
+###### Easy ######
 
 # Generating the player as tuple
 Alice = ('Alice', random.randint(1, 13))
@@ -16,7 +16,7 @@ if Alice[1] == Bob[1]:
 else:
     print(f'{ranked[0][0]} won getting {ranked[0][1]} point(s). {ranked[1][0]} lost, only having {ranked[1][1]} point(s)')
 
-###### 2nd challenge #######
+###### Intermediate #######
 
 # Adding the 3rd player to list of player
 Carol = ('Carol', random.randint(1,13))
@@ -33,7 +33,7 @@ elif ranked[0][1] == ranked [1][1]:                                 # 2-way tie 
 else:                                                               # No tie happened, only displaying winner and points
     print(f'{ranked[0][0]} won with {ranked[0][1]} point(s)')
 
-###### 3rd challenge ######
+###### Advanced ######
 
 # Since the list of player is already sorted from 2nd chall, we can reuse it
 # Again checking for tie

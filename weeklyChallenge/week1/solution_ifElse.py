@@ -11,7 +11,7 @@ elif Alice < Bob:
 else:
     print("Draw" )
 
-# Medium
+# Intermediate
 
 Alice = random.randint(1, 14)
 Bob = random.randint(1, 14)
