@@ -1,0 +1,78 @@
+\documentclass[12pt]{article} 
+\usepackage{color,graphicx, tikz, type1cm, lettrine}
+\usepackage{titling}
+\parindent 0pt
+\usepackage{setspace} \doublespacing
+\usepackage{hhline}
+\usepackage{amsmath}
+\setlength{\droptitle}{-5em}
+\title{\textbf{Problem of the Week \#2}}
+\author{C. Hayson, L. Khanh}
+\usepackage[left=0.7in, right=0.7in, top=1in, bottom=1in]{geometry}
+\usepackage{enumitem}
+\begin{document}
+\maketitle
+\section*{Speed Fines are not Fine!\footnote{Modified from J1, 2012 CCC}}
+Many communities now have \textsc{Radar} signs that tell drivers what their speed is, in the hope that
+they will slow down. Ridley Rd recently Installed \textsc{Radar} signs that detect the speed of the cars going by. You are to design a program that outputs for the road users. With integer inputs of the speed limit and the speed of the car, it will display information to a driver based on his/her speed according to the following table:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c|c}
+        Over the Speed Limit by: & Penalty Fines \\ \hhline{|=|=|}
+        1 to 10 & \$20 \\
+        11 to 20 & \$55 \\
+        21 and more & \$70 \\
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
+
+\begin{enumerate}[label=(\alph*)]
+    \item \textbf{Beginner} The user will be prompted to enter two integers. First, the user will be prompted to enter the speed limit. Second, the user will be prompted to enter the recorded speed of the car.\\
+    \textbf{Output Specifications}\\
+    If the driver is not speeding, the output should be:
+    \begin{verbatim}
+        Congratulations, you are within the speed limit!
+    \end{verbatim}
+    If the driver is speeding, the output should be:
+    \begin{verbatim}
+        You are speeding and your fine is: $[The Amount of Fine].
+    \end{verbatim}
+    \item \textbf{Intermediate} Some people just could not follow traffic rules and keep on speeding! Prompt the user for the speed limit, then \textbf{within a loop}, prompted the user to input the recorded speed of the same car on multiple occasions. The loop does not end until the diver's license is suspended. The driver would have there liscese suspended on the $5^{th}$ occasion of offend.\\
+    \textbf{Output Specifications}\\
+    If the driver is not speeding, the output should be:
+    \begin{verbatim}
+        Congratulations, you are within the speed limit!
+    \end{verbatim}
+    If the driver is speeding, the output should be:
+    \begin{verbatim}
+        You are speeding and your fine is: $[The Amount of Fine]. 
+        The system has detected you speeding for [Number of Offence] times.
+    \end{verbatim}
+    If the driver's licenses is suspended, the output should be:
+    \begin{verbatim}
+        Your linsense has been suspended.  
+    \end{verbatim}
+    \item \textbf{Advanced} The police department is experimenting with increasing fines based on the number of offend and also the overspeed amount on a \textbf{polynominal scale}. given by the following:
+    $$
+        \text{Fine} = (\text{Number of Offend})^2 \cdot \sqrt{(\text{Speed Over the Limit)}}
+    $$
+    Implement that in the previous code.\\
+    \textbf{Python's mathematical operators} To implement mathematical relations between variables, we can simply use $+, -, *, /$ for the basic arithmetic operations. And for power, use \verb|a**b| to represent $a^b$ (NOT \^{}, which is the logical inequality operation) and \verb|math.sqrt(a)| to implement $\sqrt{a}$.
+\end{enumerate}
+
+\textbf{Investigate: Iterables} Lists, Sets, and Dictionaries\footnote{aka Arrays, HashSets, HashMap respectively}, along with Tuples, are common data types to store a bunch of data. Investigate, is there a way to turn the code in Beginner and Intermediate sections \textbf{more modular} by using those features? \\ 
+    \begin{verbatim}
+        https://www.learnpython.org/en/Dictionaries
+    \end{verbatim}
+\textit{\textbf{Modular} Developers separate program functions into independent pieces, such that it is easily adaptive to changes. In this case, if, hypothetically, some law changes and the fines are no longer applicable, the programmer does not have to go through the code and change the} \verb|if|'s \textit{and} \verb|else|'s.\\ \\
+\textbf{Investgate: fString} The \textsc{fString} is a pretty useful modification of string that could easily include a variable in a clean way.
+    \begin{verbatim}
+        https://realpython.com/python-f-strings/
+    \end{verbatim}
+    
+\paragraph{Note} If you are interested in Python, go visit this website to learn at an accelerated pace!!
+\begin{verbatim}
+    https://www.learnpython.org/en/
+\end{verbatim}
+
+\end{document}

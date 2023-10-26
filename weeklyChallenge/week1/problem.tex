@@ -1,0 +1,28 @@
+\documentclass[12pt]{article} 
+\usepackage{color,graphicx, tikz, type1cm, lettrine}
+\usepackage{titling}
+\parindent 0pt
+\usepackage{setspace} \doublespacing
+\setlength{\droptitle}{-5em}
+\title{\textbf{Problem of the Week \#1}}
+\author{C. Hayson, L. Khanh}
+\usepackage[left=0.7in, right=0.7in, top=1in, bottom=1in]{geometry}
+\usepackage{enumitem}
+\begin{document}
+\maketitle
+\section*{Card Game}
+Alice and Bob are playing a Game of cards. Alice draws a card randomly from a deck of 13 cards numbers 1-13. Bob also draws a card randomly from another deck. A player wins by having a card greater than the other, otherwise, a draw would occur. \\
+\begin{enumerate}[label=]
+    \item \textbf{Easy} Using the \verb|random| package in Python, design a program that has two variables, \verb|alice| and  \verb|bob| correspond to two random numbers. The program would determine the winner and their card number, otherwise, a tie is announced.\\
+    (hint) The greater or equal operator is \verb|>=| in Python.\\
+    \item \textbf{Intermediate} Carol joins in the game and draws a card. Can you determine the winner and their card number, or if there is a tie? \\
+    (hint) The function max() and min() will return the highest and lowest number in a list of arguments.
+    \item \textbf{Advanced} Can you also write the ranking of the 3 players? \textit{If a tie happens, take the higher of the 2 ranks (e.g. if the card result is 5 2 5, the ranking would be 1 3 1}
+\end{enumerate}
+
+\paragraph{Note} If you are interested in Python, go visit this website to learn at an accelerated pace!!
+\begin{verbatim}
+    https://www.learnpython.org/en/
+\end{verbatim}
+
+\end{document}

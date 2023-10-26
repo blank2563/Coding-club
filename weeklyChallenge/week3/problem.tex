@@ -1,0 +1,56 @@
+\documentclass[12pt]{article} 
+\usepackage{color,graphicx, tikz, type1cm, lettrine}
+\usepackage{titling}
+\parindent 0pt
+\usepackage{setspace} \doublespacing
+\usepackage{hhline}
+\usepackage{amsmath}
+\setlength{\droptitle}{-5em}
+\title{\textbf{Problem of the Week \#2}}
+\author{C. Hayson, L. Khanh}
+\usepackage[left=0.7in, right=0.7in, top=1in, bottom=1in]{geometry}
+\usepackage{enumitem}
+
+\begin{document}
+\maketitle
+\section*{Restaurant order}
+You are a manager for a small Italian restaurant and need to take in order from customer. However, math is not your strong point, and under the pressure of working, you just can't write down the item and calculate the bill fast enough, and customer are growing impatient!!! You decide to write a program to calculate the bill for you based on the item ordered. The food that your restaurant make and their price (excluding 15\% tax) is in the table below:
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c|c}
+        Food & Price \\
+        \hhline{|=|=|}
+        Carbonara & \$18.99 \\
+        Spaghetti & \$17.49 \\
+        Pizza & \$24.99 \\
+        Gnochi & \$14.99 \\
+        Risotto & \$22.49 \\
+        Lasagna & \$49.99 \\
+        Tiramisu & \$11.99 \\
+        Gelato & \$7.99
+    \end{tabular}
+\end{table}
+
+\begin{enumerate}[label=(\alph*)]
+    \item \textbf{Beginner} Using a loop and a dictionary, ask the user for all of their order by inputting the name of the food as written in the menu, inputting a 0 to indicate end of order. Output their total bill afterward, and don't forget the 15\% tax. If the customer inputted an item that your restaurant doesn't make, output an error message but do not terminate the program, the customer wouldn't like having to input the whole order again would they?
+    \item \textbf{Intermediate} Your restaurant is expanding and you want to add some drink to the menu; juice, soda, beer, wine and the like. But you are a law abiding person, you can't sell alcohol to minor! Add a check for age before each order (you trust that your customer will not lie about their age) and if a minor try to order alcohol, display a warning message. The new drink to be added is as below:
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{c|c}
+            Drink & Price \\
+            \hhline{|=|=|}
+            Water & \$1.99 \\
+            Juice & \$3.99 \\
+            Soda & \$2.49 \\
+            Beer & \$4.99 \\
+            Red wine & \$9.99 \\
+            White wine & \$11.99
+        \end{tabular}
+    \end{table}
+    
+    \item \textbf{Advance} Your restaurant has expanded to a dizzying size, and now you can't even remember the order as they come in anymore, there's just too many of them! Add a function in your program to print out the customer's order.
+\end{enumerate}
+
+
+\end{document}
