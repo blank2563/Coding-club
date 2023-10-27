@@ -9,7 +9,6 @@ def beginner():
             'Gelato'    : 7.99}
     price = 0
 
-    
     while True:
         print('Please enter your order')
         item = input()
